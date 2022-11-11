@@ -48,10 +48,16 @@ sqlite3 data/compiled.sf-restaurant-inspections.sqlite
 
 ```sql
 .mode csv
+
 .headers on
+
+
 .import data/collected/violations_plus.csv violations_plus
+
 .import data/collected/businesses_plus.csv businesses_plus
+
 .import data/collected/inspections_plus.csv inspections_plus
+
 ```
 
 
