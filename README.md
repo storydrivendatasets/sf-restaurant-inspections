@@ -20,7 +20,7 @@ Data was previously found at the [San Francisco Department of Public Health](htt
 
 Now we use a 2016 version...
 
-[SFFoodProgram_Complete_Data.zip (2016 Archive)](https://github.com/storydrivendatasets/sf-restaurant-inspections/raw/main/data/_archive/SFFoodProgram_Complete_Data.zip)
+[SFFoodProgram_Complete_Data.zip (2016 Archive)](https://github.com/storydrivendatasets/sf-restaurant-inspections/raw/main/archive/SFFoodProgram_Complete_Data.zip)
 
 
 ### Batch script
@@ -28,7 +28,11 @@ Now we use a 2016 version...
 ```sh
 mkdir -p data/collected
 curl -Lo data/collected/SFFoodProgram_Complete_Data.zip \
-    https://github.com/storydrivendatasets/sf-restaurant-inspections/raw/main/data/_archive/SFFoodProgram_Complete_Data.zip
+    https://github.com/storydrivendatasets/sf-restaurant-inspections/raw/main/archive/SFFoodProgram_Complete_Data.zip
+
+unzip -d data/collected \
+    data/collected/SFFoodProgram_Complete_Data.zip
+    
 # Archive:  data/collected/SFFoodProgram_Complete_Data.zip
 #   inflating: data/collected/violations_plus.csv  
 #   inflating: data/collected/businesses_plus.csv  
